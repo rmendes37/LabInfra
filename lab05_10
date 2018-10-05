@@ -1,0 +1,258 @@
+    1  passwd 
+    2  vi /etc/ssh/sshd_config 
+    3  systemctl restart sshd 
+    4  vim /etc/rundeck/framework.properties 
+    5  apt-get update
+    6  hostname
+    7  vi /etc/rundeck/framework.properties 
+    8  vi /etc/rundeck/rundeck-config.properties 
+    9  systemctl restart rundeck
+   10  systemctl restart rundeckd
+   11  vi /etc/rundeck/rundeck-config.properties 
+   12  systemctl restart rundeckd
+   13  vi /etc/rundeck/rundeck-config.properties 
+   14  systemctl restart rundeckd
+   15  vi /etc/rundeck/rundeck-config.properties 
+   16  ls -l
+   17  ls -l /srv
+   18  su rundek
+   19  su rundeck
+   20  ls /srv
+   21  exit
+   22  ls /srv
+   23  chmod o+w /srv/
+   24  ls /srv
+   25  vi /srv/resource.yaml 
+   26  su -rundeck
+   27  su - rundeck
+   28  vim /srv/resource.yaml 
+   29  vi /srv/resource.yaml 
+   30  vim /srv/resource.yaml 
+   31  vi /srv/resource.yaml 
+   32  ssh -i id_rsa root@docker.dexter.com.br
+   33  ls
+   34  exit
+   35  systemctl stop rundeckd
+   36  systemctl disable rundeckd
+   37  exit
+   38  rm /etc/yum.repos.d/jenkins.repo 
+   39  systemctl jenkins restart
+   40  systemctl restart jenkins 
+   41  cat /var/lib/jenkins/secrets/initialAdminPassword
+   42  hostname -I
+   43  ping devops.dexter.com.br
+   44  yum install sshpass
+   45  exit
+   46  systemctl disable jenkins
+   47  apt-get purge jenkins
+   48  apt purge jenkins
+   49  /Library/Application Support/Jenkins/Uninstall.command
+   50  yum install ansible -y
+   51  yum -y remove jenkins
+   52  rm -rf /var/cache/jenkins/
+   53  rm -rf /var/lib/jenkins/
+   54  systemctl start jenkins
+   55  /var/lib/jenkins/secrets/initialAdminPassword
+   56  cat /var/lib/jenkins/secrets/initialAdminPassword
+   57  git clone http://devops.dexter.com.br/root/webhook.git
+   58  yum install git
+   59  git clone http://devops.dexter.com.br/root/webhook.git
+   60  ls
+   61  cd webhook/
+   62  vi index.html 
+   63  git add .
+   64  git commit -m "novo"
+   65  git push -u origin master
+   66  git clone http://devops.dexter.com.br/root/webhook2.git
+   67  cd webhook2/
+   68  echo exercico1 > file
+   69  git add .
+   70  git commit -m "testando webhook"
+   71  git push origin master
+   72  cd /var/lib/jenkins/user
+   73  cd /var/lib/jenkins/users/
+   74  ls
+   75  cd jenkins/
+   76  ls
+   77  vim config.xml 
+   78  yum install vim -y 
+   79  vim config.xml 
+   80  ls
+   81  cd ..
+   82  ls
+   83  vim /var/lib/jenkins/users/jenkins/config.xml 
+   84  systemctl restart jenkins 
+   85  ss -ntpl 
+   86  vim /var/lib/jenkins/users/jenkins/config.xml 
+   87  systemctl restart jenkins 
+   88  vim /var/lib/jenkins/users/jenkins/config.xml 
+   89  systemctl restart jenkins 
+   90  apt-get install git
+   91  touch /tmp/teste
+   92  cd /tmp/
+   93  ls
+   94  ls -l teste
+   95  init 6
+   96  ls
+   97  cd deploy/
+   98  cd templates/
+   99  ls
+  100  cd ..
+  101  ls
+  102  cd tasks/
+  103  exit
+  104  ansible-galaxy init prereqs
+  105  ansible-galaxy init container
+  106  ansible-galaxy init deploy
+  107  cd prereqs/tasks/
+  108  vim main.yaml
+  109  git clone https://github.com/gpolicante/infraagil.git
+  110  cp infraagil/container.yaml > main.yaml
+  111  cat infraagil/container.yaml > main.yaml
+  112  ls
+  113  pwd
+  114  ls -l
+  115  vim main.yml 
+  116  vim main.yaml 
+  117  cd ..
+  118  ls
+  119  cd ..
+  120  ls
+  121  cd prereqs/
+  122  ls
+  123  cd ..
+  124  cp prereqs/tasks/main.yaml container/tasks/
+  125  rm prereqs/tasks/main.yaml 
+  126  cd deploy/tasks/
+  127  cd ../../
+  128  ls
+  129  cd prereqs/
+  130  cd tasks/
+  131  ls
+  132  vi main.yml 
+  133  vim main.yml 
+  134  cd ../../deploy/tasks/
+  135  vim ../../container/tasks/main.yml 
+  136  vim ../../container/tasks/main.yaml 
+  137  cp  ../../container/tasks/main.yaml ../../container/tasks/main.yml 
+  138  vim ../../container/tasks/main.yml
+  139  rm  ../../container/tasks/main.yaml 
+  140  vim ../../container/tasks/main.yml
+  141  pwd
+  142  vim main.yml 
+  143  cd /var/lib/jenkins/
+  144  ls
+  145  cd
+  146  ls
+  147  cd deploy/
+  148  cd tasks/
+  149  vim main.yml 
+  150  cat main.yml 
+  151  ls /var/lib/jenkins/workspace/
+  152  ls -l /var/lib/jenkins/workspace/
+  153  vim main.yml 
+  154  cd ../templates/
+  155  vim vhost_green
+  156  cp vhost_green  vhost_blue
+  157  vim vhost_blue 
+  158  cd /etc/ansible/
+  159  mkdir playbook
+  160  cd playbook/
+  161  vim prereq.yaml
+  162  cp prereq.yaml container.yaml
+  163  vim container.yaml 
+  164  cp container.yaml deploy.yaml
+  165  vi deploy.yaml 
+  166  vim deploy.yaml 
+  167  cd ..
+  168  ls
+  169  cd 
+  170  ls
+  171  cd deploy/
+  172  cd tasks/
+  173  ls
+  174  vi main.yml 
+  175  git clone http://devops.dexter.com.br/root/bluegreen.git
+  176  ls
+  177  cd bluegreen/
+  178  vim index.html
+  179  cd
+  180  ls
+  181  cd deploy/
+  182  cd tasks/
+  183  vim main.yml 
+  184  ls
+  185  cd bluegreen/
+  186  ls
+  187  git add .
+  188  git commit -m "meu primeiro bluegreen"
+  189  git push origin master
+  190  ls
+  191  cd ..
+  192  ls
+  193  cd
+  194  ls
+  195  cd prereqs/
+  196  ls
+  197  cd tasks/
+  198  ls
+  199  vim main.yml 
+  200  pwd
+  201  vim /etc/ansible/playbook/prereq.yaml 
+  202  ls
+  203  cd infraagil/
+  204  ls
+  205  cd
+  206  ls
+  207  cd webhook/
+  208  ls
+  209  vi index.html 
+  210  cd /etc/ansible/playbook/
+  211  vim prereq.yaml 
+  212  vim container.yaml 
+  213  vim prereq.yaml 
+  214  cd ..
+  215  ls
+  216  cd roles/
+  217  ls
+  218  cd ..
+  219  ls
+  220  vi hosts 
+  221  ls
+  222  cd roles/
+  223  ls
+  224  cd ..
+  225  ls
+  226  cd playbook/
+  227  ls
+  228  vi prereq.yaml 
+  229  vim prereq.yaml 
+  230  ls ../roles/
+  231  ls
+  232  cd ..
+  233  ls
+  234  cd roles/
+  235  ls
+  236  cd ..
+  237  ls
+  238  cd roles/
+  239  ls
+  240  cd 
+  241  ls
+  242  vim /etc/ansible/roles/container/
+  243  cp -r deploy /etc/ansible/roles/
+  244  cp -r prereqs /etc/ansible/roles/ 
+  245  pwd
+  246  cd /etc/ansible/
+  247  ls
+  248  cd roles
+  249  ls
+  250  cd container/
+  251  ls
+  252  cd ..
+  253  ls
+  254  exit
+  255  ls
+  256  gi clone https://github.com/rmendes37/LabInfra.git
+  257  ls
+  258  history > lab05_10
