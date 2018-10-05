@@ -1,0 +1,15 @@
+---
+- name: instalando docker-ce
+  hosts: docker
+  tasks:
+   - name: instalando dependencias
+     shell: 'sudo apt-get update'
+   - name: continuando as dependencias
+     shell: 'sudo apt-get install -y curl openssh-server ca-certificates'
+   - name: instando o postfix
+     shell: 'sudo apt-get install -y postfix'
+   - name: fazendo o download do script geralzao do gitlab
+     shell: 'curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash'
+   - name: instalando o gitlab
+     shell: 'sudo EXTERNAL_URL="http://gitlab.example.com" apt-get install gitlab-ce'
+
